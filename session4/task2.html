@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2</title>
+</head>
+
+<body>
+    <h3>Event Registration Form</h3>
+    <img src="logo.jpg" alt="Event Image" width="100%" height="100px">
+
+    <form action="cross-ref.html" method="get">
+        <fieldset>
+            <legend>Personal Details</legend><br>
+            <label for="Fullname">Full Name:</label>
+            <input type="text" name="Fullname" id="Fullname" placeholder="Full Name.."><br><br>
+            <label for="Email">Email:</label>
+            <input type="email" name="Email" id="Email" placeholder="Email.."><br><br>
+            <label for="Phone">Phone:</label>
+            <input type="tel" name="Phone" id="Phone" placeholder="Phone.."><br><br>
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender">Male
+            <input type="radio" name="gender">Female<br><br>
+            <label for="Age">Age:</label>
+            <input type="number" name="Age" id="Age" placeholder="Age.."><br><br>
+
+            <fieldset>
+                <legend>Registration Details</legend>
+                <label>Student Type</label>
+                <select name="StudentType" id="StudentType">
+                    <option value="DayScholar">Day Scholar</option>
+                    <option value="Hosteler">Hosteler</option>
+
+                </select>
+                <br><br>
+                <label for="Event">Event:</label>
+                <select name="Event" id="Event">
+                    <option value="Workshop">Workshop</option>
+                    <option value="Seminar">Seminar</option>
+                    <option value="Conference">Conference</option>
+                </select><br><br>
+                <label for="Date">Date:</label>
+                <input type="date" name="Date" id="Date"><br><br>
+                <label for="Time">Time:</label>
+                <input type="time" name="Time" id="Time"><br><br>
+                <label for="Location">Location:</label>
+                 <textarea name="Location" id="Location" rows="4" cols="50" placeholder="Location.."></textarea><br><br>
+                 <label for="type"> Pass Type</label>
+                 <select name="ptype" id="ptype">
+                    <option value="Silver">Silver</option>
+                    <option value="Silver">Gold</option>
+                    <option value="Silver">Platinum</option>
+                 </select>
+                <label for="pas">Pass:</label>
+                <input type="file" name="pass" id="pass">
+
+            </fieldset>
+            <br>
+            <input type="submit" value="submit"><br>
+        </fieldset>
+
+    </form>
+</body>
+
+</html>
