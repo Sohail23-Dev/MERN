@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h3 id="header">Event Registration Form</h3>
+    <img src="logo.jpg" alt="Event Image" width="100%" height="100px">
+
+    <form action="cross-ref.html" method="get">
+        <fieldset>
+            <h2> <b><i>College Fest Details:</i></b></h2>
+            <ul>
+                <li>Fest Name: GFG GHRCEMN Technovate</li>
+                <li>Date of Event:May 12th 2025 - may 14th 2025</li>
+                <li>Location: A-143, 6th Floor, Sovereign Corporate Tower, Sector-136, Noida, Uttar Pradesh
+    
+                    201305.
+    
+                    GFG Headquarters, Noida, Uttar Pradesh</li>
+                <li>Theme: Innovation in technology and creativity.</li>
+                <li>Organizers: College Fest Committee Leader ( Gupta Ji)</li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <h2><b><i>Main Events:</i></b></h2>
+            <ul>
+                <li>Technical Events:Coding Challanges, Robotics Competition, Tech Quiz </li>
+                <li>Cultural events: Dance, Drama, Singing, Fashion Show</li>
+                <li>Sports Events: Football, Cricket,Basketball, Volleyball</li>
+                <li>Workshops: 3D Printing, Web Development, Digital Marketing</li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <h2><b><i>Pass Types:</i></b></h2>
+            <ol>
+                <li>Silver Pass[500/-]:Basic entry to all events. <b>( solo-500/- & couple-800/-)</b> </li>
+                <li>Gold Pass[1000/-]: Entery to all events + access to workshops. <b>( solo-1000/- & couple-1800/-)</b>
+                </li>
+                <li>Platinum Pass[1500/-]: All benefits of gold pass + VIP Seating at main events + meet and greet with
+                    speakers + free T-shirts. <b>( solo-1500/- & couple-2600/-)</b></li>
+            </ol>
+    
+        </fieldset>
+        <u><mark> <b>Registration Deadline: May 2nd 2025</b></mark>
+        </u>
+        <fieldset>
+            <h2><b><i>Contact Details:</i></b></h2>
+            <ul>
+                <li>Email: guptaji124@gmail.com</li>
+                <li> Phone: 123-456-7890</li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <h2><b><i>Special Guests</i></b></h2>
+            <ul>
+                <li>Guest speakers: Dr. Rajesh Kumar(Tech Innovator), Ananya Rao (Famous Dancer) And Yo YO Honey Singh
+                    (World-Wide Famous Singer)</li>
+    
+                <li>Performer: DJ Nexa, The Rock Band</li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <h2><b><i>Foods & Beverages:</i></b></h2>
+            <ol>
+                <li>Starter: Manchurian, Dry Paneer Chilli, Paneer Pakora</li>
+                <li>Main Course: Paneer Biryani, Rayta, & many more items.</li>
+                <li>Fast Foods: Golgappa, Noodles, Creamy pasta,</li>
+                <li>Sweets: Gulab Jamun, Rajbhog, Chamcham, Raskadamb</li>
+                <li>Soft Drinks & Mocktails: Mocktail Sundowner ,Lime Ricky, Arnold Palmer, Shirley Temple</li>
+            </ol>
+        </fieldset>
+        <fieldset>
+            <h2><b><i>Parking Information:</i></b></h2>
+            <p>Parking available for all type of pass holders ( Additional fee for VIP parking)</p>
+           <p> <mark> Saftey measures:First aid stations, Security personnel,and Emergency exits are marked throughout the
+            campus </mark></p>
+        </fieldset>
+
+        <fieldset>
+            
+
+            <legend>Personal Details</legend><br>
+            <label for="Fullname">Full Name:</label>
+            <input type="text" name="Fullname" id="Fullname" placeholder="Full Name.."><br><br>
+            <label for="Email">Email:</label>
+            <input type="email" name="Email" id="Email" placeholder="Email.."><br><br>
+            <label for="Phone">Phone:</label>
+            <input type="tel" name="Phone" id="Phone" placeholder="Phone.."><br><br>
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender">Male
+            <input type="radio" name="gender">Female<br><br>
+            <label for="Age">Age:</label>
+            <input type="number" name="Age" id="Age" placeholder="Age.."><br><br>
+
+            <fieldset>
+                <legend>Registration Details</legend>
+                <label>Student Type</label>
+                <select name="StudentType" id="StudentType">
+                    <option value="DayScholar">Day Scholar</option>
+                    <option value="Hosteler">Hosteler</option>
+
+                </select>
+                <br><br>
+                <label for="Event">Event:</label>
+                <select name="Event" id="Event">
+                    <option value="Workshop">Workshop</option>
+                    <option value="Seminar">Seminar</option>
+                    <option value="Conference">Conference</option>
+                </select><br><br>
+                <label for="Date">Date:</label>
+                <input type="date" name="Date" id="Date"><br><br>
+                <label for="Time">Time:</label>
+                <input type="time" name="Time" id="Time"><br><br>
+                <label for="Location">Location:</label>
+                 <textarea name="Location" id="Location" rows="4" cols="50" placeholder="Location.."></textarea><br><br>
+                 <label for="type"> Pass Type</label>
+                 <select name="ptype" id="ptype">
+                    <option value="Silver">Silver</option>
+                    <option value="Silver">Gold</option>
+                    <option value="Silver">Platinum</option>
+                 </select>
+                <label for="pas">Pass:</label>
+                <input type="file" name="pass" id="pass">
+
+            </fieldset>
+            <br>
+            <input type="submit" value="submit"><br>
+        </fieldset>
+
+    </form>
+</body>
+
+</html>

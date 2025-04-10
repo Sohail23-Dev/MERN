@@ -1,0 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Noto+Sans+JP:wght@100..900&family=Noto+Sans+KR:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 20px;
+    scroll-behavior: smooth;
+}
+h1{
+    color: blue;
+    font-size: 2em;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.one{
+    background-color: lightblue;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 1.2em;
+}
+#two{
+    background-color: lightgreen;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 1.2em;
+}
+input[type="text"],input[type="email"],input[type="password"],input[type="number"],input[type="date"],input[type="tel"]{
+    font-family: Arial, sans-serif;
+    width: 50%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: beige;
+}
+input::placeholder{
+    color: brown;
+}
+
+/* nth-child */
+p:nth-child(even){
+    background-color: lightgray;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 1.2em;
+    color: darkblue;
+}
+/* sudo-classes */
+i::before{
+    content: "";
+    margin-right: 5px;
+}
+i::after{
+    content: "";
+    margin-right: 5px;
+}
+i:hover{
+    color: red;
+    font-size: 1.5em;
+}
+
+ul li{
+    list-style: none;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 0.7em;
+    background-color: lightyellow;
+
+}
+ol li{
+    list-style: none;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 0.7em;
+    background-color: lightyellow;
+
+}
+
+label{
+    font-family: Arial, sans-serif;
+    font-size: 1.2em;
+    color: rgb(42, 170, 61);
+    margin-right: 10px;
+    display: inline-block;
+}
+
+fieldset{
+    border: 2px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 1.2em;
+    background-color: rgba(205, 152, 244, 0.378);
+    color: darkblue;
+}
+#header{
+    font-family: "Bungee Spice", sans-serif;
+    font-size: 2em;
+    
+}
