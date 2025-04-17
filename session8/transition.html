@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        .container {
+            height: 400px;
+            width: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* height: 100vh; */
+            background-color: beige;
+        }
+
+        .btn {
+            padding: 20px 40px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 10px solid yellow;
+            cursor: pointer;
+            font-size: 16px;
+            transition: transform 0.5s ease, background-color 0.5s ease, color 0.5s ease, border-radius 0.5s ease;
+        }
+
+        .btn:hover {
+            transform: scale(1.2);
+            background-color: #2980b9;
+            color: #f39c12;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="btn">Hover ME</div>
+    </div>
+</body>
+
+</html>
