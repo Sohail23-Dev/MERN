@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <style>
+        .container {
+            height: 700px;
+            width: 700px;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            gap: 10px;
+            /* grid-template-areas: 
+                'brand brand brand'
+                'logo main main adv3'
+                'adv2 main main adv3'
+                'main2 main2 main2 main2'
+                'footer footer logo2 logo3' */
+        }
+        .box {
+            background-color: greenyellow;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        .brand {
+            /* grid-area: brand; */
+            grid-column: 1/13;
+        }
+        .navbar {
+            /* grid-area: navbar; */
+            grid-column: 1/5;
+
+        }
+        .logo {
+            /* grid-area: logo; */
+            grid-column: 5/9;
+
+        }
+        .main {
+            /* grid-area: main; */
+            grid-column: 9/13;
+
+        }
+        .adv3 {
+            /* grid-area: adv3; */
+            grid-column: 3/7;
+
+        }
+        .adv2 {
+            /* grid-area: adv2; */
+            grid-column: 7/11;
+
+        }
+        .main2 {
+            /* grid-area: main2; */
+            grid-column: 5/9;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box brand">Brand Name</div>
+        <div class="box navbar">Navbar</div>
+        <div class="box logo">Logo</div>
+        <div class="box main">Main News</div>
+        <div class="box adv3">Ad3</div>
+        <div class="box adv2">Ad2</div>
+        <div class="box main2">Main Story 2</div>
+       
+    </div>
+</body>
+</html>
+</body>
+</html>

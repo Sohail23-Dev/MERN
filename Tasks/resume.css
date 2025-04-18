@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.resume{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    background-color: #f0f0f0;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(8,1fr);
+}
+
+
+.pic{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border: 5px solid #000;
+    position: absolute;
+    top: 40px;
+    left: 50px;
+}
+#fname{
+    position: absolute;
+    top: 45px;
+    left: 180px;
+    font-size: 1.7em;
+    font-weight: 550;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#lname{
+    position: absolute;
+    top: 76px;
+    left: 180px;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#pos{
+    position: absolute;
+    top: 113px;
+    left: 180px;
+    font-size: 1.1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: gray;
+}
+.licon{
+    position: absolute;
+    top: 48px;
+    right: 250px;
+}
+.callicon{
+    position: absolute;
+    top: 83px;
+    right: 248px;
+}
+.emailicon{
+    position: absolute;
+    font-size: 22px;
+    top: 108px;
+    right: 250px;
+}
+#address{
+    position: absolute;
+    top: 51px;
+    right: 40px;
+}
+#phone{
+    position: absolute;
+    top: 85px;
+    right: 134px;
+}
+#email{
+    position: absolute;
+    top: 114px;
+    right: 28px;
+}
+#linkshead{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#abouthead{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#workhead{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.linktab{
+    max-width: 280px;
+    position: absolute;
+    left: 50px;
+    top: 200px
+}
+.abouttab{
+    /* width: 250px; */
+    max-width: 100vw;
+    position: absolute;
+    top: 200px;
+    left: 350px;
+
+}
+
+#lang{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.langtab{
+    position: absolute;
+    top: 400px;
+    left: 50px;
+    max-width: 280px;
+    width: 280px;
+}
+.workexp{
+    position: relative;
+    top: -167px;
+    left: 303px;
+    width: 75vw;
+}
+.hobbies{
+    position: absolute;
+    top: 235px;
+    left: 0px;
+    max-width: 280px;
+    width: 280px;
+}
+.hobbies ul li{
+    position: relative;
+    line-height: 20px;
+    left: 15px;
+}
+#eduhead{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.education{
+    position: absolute;
+    top: 224px;
+    left: 310px;
+    width: 75vw;
+}
+#skillhead{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.skillstab{
+    position: absolute;
+    top: 480px;
+    left: 310px;
+    width: 75vw;
+}
+
+.language {
+    margin-bottom: 5px;
+}
+
+.label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.bar-container {
+    background-color: #f0f0f0;
+    border-radius: 25px;
+    overflow: hidden;
+    height: 10px;
+    width: 100%;
+}
+
+.bar {
+    height: 100%;
+    text-align: right;
+    padding-right: 10px;
+    line-height: 20px;
+    color: white;
+    background-color: grey;
+}
