@@ -1,0 +1,123 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: black;
+  color: white;
+  display: flex;
+  font-size: 1.8rem;
+  position: sticky;
+  top:0px;
+  z-index: 1000;;
+}
+
+.header .logo {
+  padding: 10px;
+  font-size: 2rem;
+  position: relative;
+  left: 10px;
+}
+
+.nav-links a {
+  position: relative;
+  top: 30px;
+  color: magenta;
+  left: 790px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+.nav-links a:hover {
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  padding: 10px;
+}
+.hero {
+  background-image: url(bridge.jpg);
+  height: 87vh;
+  width: 99vw;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+}
+
+.main-button {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px solid white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+  position: absolute;
+  top:70vh;
+  left: 45%;
+  border-radius: 25px;
+}
+
+.main-button:hover {
+  background-color: magenta;
+  color: black;
+}
+
+.cards-container {
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+
+}
+.cards-head{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: black;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 470px;
+  width: 30%;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  align-items: center;
+}
+.card img {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
+.card h2 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  color: black;
+  justify-content: center;
+}
+.card-button{
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  position: relative;
+  top: 20px;
+  border-radius: 25px;
+}
+.card-button:hover {
+  background-color: magenta;
+  color: black;
+}
