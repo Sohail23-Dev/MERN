@@ -2,44 +2,96 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+
 }
 
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .nav-links {
+    display: flex;
+    height: 20%;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    position: relative;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1.2rem;
+  }
+
+  .main-button {
+    font-size: 1.2rem;
+    padding: 8px 16px;
+  }
+
+  .card {
+    width: 90%;
+    margin: 10px auto;
+  }
+}
+
+
 .header {
-  background-color: black;
   color: white;
   display: flex;
   font-size: 1.8rem;
   position: sticky;
-  top:0px;
-  z-index: 1000;;
+  top: 0px;
+  width: 100%;
 }
 
 .header .logo {
+  background-color: black;
   padding: 10px;
-  font-size: 2rem;
+  font-size: 1.7rem;
+  position: absolute;
+  width: 100%;
+
+}
+
+.nav-links {
+  display: flex;
+  height: 20%;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
   position: relative;
-  left: 10px;
 }
 
 .nav-links a {
   position: relative;
-  top: 30px;
-  color: magenta;
-  left: 790px;
+  top: 2.7vh;
+  right: 10px;
+  color: white;
   text-decoration: none;
   font-size: 1.5rem;
   padding: 10px;
+  z-index: 1000;
 }
+
 .nav-links a:hover {
-  color: white;
-  background-color: black;
-  border-radius: 5px;
-  padding: 10px;
+  color: magenta;
+  transform: scale(1.1);
 }
+
 .hero {
   background-image: url(bridge.jpg);
-  height: 87vh;
-  width: 99vw;
+  height: 90%;
+  width: 100%;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -48,22 +100,51 @@
   font-size: 2rem;
 }
 
+.hero-content {
+  font-size: 1.5rem;
+  color: white;
+  position: relative;
+  top: 0vh;
+  width: 50%;
+  height: 100%;
+}
+
+.hero-content h1 {
+  position: relative;
+  top: 39%;
+  text-align: center;
+  padding: 20px;
+  width: 50vw;
+}
+
+.hero-content p {
+  text-align: left;
+  position: relative;
+  top: 40%;
+
+}
+
+
 .main-button {
-  background-color: black;
+  background: linear-gradient(to top, magenta 50%, black 50%);
+  background-size: 100% 200%;
+  background-position: top;
   color: white;
   padding: 10px 20px;
-  border-radius: 5px solid white;
-  text-align: center;
-  text-decoration: none;
   font-size: 1.5rem;
   position: absolute;
-  top:70vh;
-  left: 45%;
+  top: 65%;
+  left: 40%;
   border-radius: 25px;
+  transition: background-position .3s ease-out, color .2s ease-out;
+  border: none;
+  cursor: pointer;
+
+
 }
 
 .main-button:hover {
-  background-color: magenta;
+  background-position: bottom;
   color: black;
 }
 
@@ -73,7 +154,8 @@
   flex-flow: row wrap;
 
 }
-.cards-head{
+
+.cards-head {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,38 +168,57 @@
   background-color: white;
   display: flex;
   flex-direction: column;
-  height: 470px;
+  height: 550px;
   width: 30%;
   margin: 20px;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   justify-content: center;
   align-items: center;
 }
+
+.card:hover {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+  transform: scale(1.02);
+  transition: all 0.4s ease-in-out;
+}
+
 .card img {
   width: 100%;
   height: 300px;
   border-radius: 10px;
 }
+
 .card h2 {
   font-size: 1.5rem;
   margin-top: 10px;
   color: black;
   justify-content: center;
 }
-.card-button{
-  background-color: black;
+
+.card p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: black;
+  justify-content: center;
+}
+
+.card-button {
+  background: linear-gradient(to right, magenta 10%, black 50%);
   color: white;
   padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
   font-size: 1.5rem;
   position: relative;
   top: 20px;
   border-radius: 25px;
+  border: none;
+  cursor: pointer;
 }
+
+
+
 .card-button:hover {
-  background-color: magenta;
-  color: black;
+
+  color: greenyellow;
 }
