@@ -6,3 +6,6 @@ Total width = Padding right + Padding left + Bottom Right + Border left
 
 Next Session Task: 11-04-25
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox
+
+Next Sessiion : 25-04-25
+12 Grid System, Alerts, modal,carousel

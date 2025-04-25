@@ -166,6 +166,7 @@ a{
   font-size: 1.5rem;
   padding: 10px;
   z-index: 9999;
+  transition: all 0.2s ease-in-out;
 }
 
 .nav-links a:hover {
@@ -299,4 +300,12 @@ a{
   border-radius: 25px;
   border: none;
   cursor: pointer;
+}
+.reviews{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: black;
+  margin-top: 20px;
 }
