@@ -1,0 +1,435 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100dvh;
+  width: 100%;
+  overflow-x: hidden;
+}
+/* backgroud image for head section */
+header {
+  height: 30vh;
+  width: 100%;
+  background-image: url(../image/head.jpg);
+  background-size: cover;
+  background-position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Daily store logo  */
+header .comp_name {
+  font-family: "Anton Sans", sans-serif;
+  letter-spacing: 10px;
+  font-weight: 900;
+  text-transform: uppercase;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.4)
+  );
+  font-size: 3rem;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: headshift;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear ease-in;
+}
+/* logo shifting from left to right */
+@keyframes headshift {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* navbar shifting from right to left */
+@keyframes navslide {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/* navbar section  */
+.navbar {
+  height: 8vh;
+  width: 100%;
+  background-color: rgb(9, 79, 63);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* animation  */
+  animation-name: navslide;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear ease-in;
+}
+
+.navbar div a {
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  font-size: 1.1rem;
+  font-family: "Anton Sans", sans-serif;
+  transition: all 0.5s ease-in-out;
+}
+.navbar div a:hover {
+  background-color: rgba(153, 226, 44, 0.7);
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 5px rgba(153, 226, 44, 0.9);
+}
+.navbar span a {
+  text-decoration: none;
+  color: white;
+  padding-left: 12px;
+}
+.navbar span a i {
+  margin-right: 10px;
+}
+.navbar .log_sign {
+  position: relative;
+  top: 3%;
+  right: -23%;
+  height: 100%;
+  transition: all 0.5s ease-in-out;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar .log_sign:hover {
+  transform: scale(1.1);
+  background-color: rgba(153, 226, 44, 0.9);
+}
+
+/* search bar */
+.search-container {
+  position: relative;
+  width: 20%;
+}
+.search-icon {
+  position: absolute;
+  top: 30%;
+  right: 30%;
+  color: gray;
+}
+
+.search-container input {
+  width: 75%;
+  padding: 10px 10px 10px 20px;
+  box-sizing: border-box;
+  border-radius: 25px;
+}
+/* category cards section  */
+.categorycards {
+  margin-top: 2vh;
+  display: flex;
+  height: 30vh;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+/* cards  */
+.categorycards .ccards {
+  display: flex;
+  height: 40vh;
+  width: 15vw;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 0px 0px 50px 50px;
+}
+.categorycards .ccards:hover {
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0px 0px 10px 3px rgba(9, 79, 63, 0.9);
+}
+.categorycards .ccards img {
+  height: 30vh;
+  width: 12vw;
+  display: flex;
+  margin-top: -20px;
+  border-radius: 0px 0px 50px 50px;
+  flex-direction: column;
+  cursor: pointer;
+}
+.categorycards .ccards a {
+  text-decoration: none;
+  color: black;
+  font-family: "Anton Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 25px;
+  color: rgb(17, 17, 188);
+}
+/* main heading first letter big  */
+header h1 .finc {
+  font-size: 5.5rem;
+  margin-top: -3vh;
+}
+/* category animation section  */
+.categorycards .vege {
+  animation-name: vege;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear ease-in;
+}
+@keyframes vege {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.categorycards .frui {
+  animation-name: frui;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear ease-in;
+}
+@keyframes frui {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.categorycards .meats {
+  animation-name: meats;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear ease-in;
+}
+@keyframes meats {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.categorycards .dailyneeds {
+  animation-name: dailyneeds;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear ease-in;
+}
+@keyframes dailyneeds {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* vegetables section  */
+
+.vegetablels-section .vheading {
+  font-family: "Anton Sans", sans-serif;
+  font-size: 2rem;
+  background-color: rgb(9, 79, 63);
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  padding: 10px;
+  margin-top: 4vh;
+  width: 100vw;
+}
+.vegetablels-section {
+  display: flex;
+  height: 30vh;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.section_card{
+  display: flex;
+  height: 40vh;
+  width: 15vw;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 0px 0px 50px 50px;
+}
+.section_card:hover {
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0px 0px 10px 3px rgba(9, 79, 63, 0.9);
+}
+.section_img{
+  display: flex;
+  border-radius: 0px 0px 50px 50px;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.img_resize{
+  height: 23vh;
+  width: 12vw;
+}
+
+.buy-now{
+  color: white;
+  background-color: rgb(9, 79, 63);
+  font-family: "Anton Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 10px;
+  border-radius: 25px;
+  width: 50%;
+  height: 12%;
+}
+/* fruits section  */
+
+.fruits-section {
+  display: flex;
+  height: 30vh;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.fruits-section .fheading {
+  font-family: "Anton Sans", sans-serif;
+  font-size: 2rem;
+  background-color: rgb(9, 79, 63);
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  padding: 10px;
+  margin-top: 29vh;
+  width: 100vw;
+}
+/* Meat Section  */
+.meat-section {
+  display: flex;
+  height: 140vh;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.meat-section .mheading {
+  font-family: "Anton Sans", sans-serif;
+  font-size: 2rem;
+  background-color: rgb(9, 79, 63);
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  padding: 10px;
+  margin-top: 29vh;
+  width: 100vw;
+  position: relative;
+  top: 8vh;
+}
+
+.meat-section .meat-card {
+  display: flex;
+  height: 40vh;
+  width: 15vw;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 0px 0px 50px 50px;
+  position: relative;
+  top: -22vh;
+}
+.meat-section .meat-card:hover {
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0px 0px 10px 3px rgba(9, 79, 63, 0.9);
+}
+
+/* footer section  */
+footer {
+  position: absolute;
+  top: 244vh;
+  height: 35vh;
+  width: 100%;
+  background-image: url(./../image/head.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+}
+footer table {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.6)
+  );
+  font-family: "Anton Sans", sans-serif;
+}
+footer table thead th {
+  color: #ffffff;
+  text-align: center;
+  padding: 34px;
+  font-size: 1.3rem;
+}
+footer table td,
+.footer table th {
+  vertical-align: middle;
+  text-align: center;
+}
+.copyright {
+  position: relative;
+  top: 2vh;
+  text-align: center;
+  color: black;
+  font-size: 1rem;
+  font-family: "Anton Sans", sans-serif;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.copyright span {
+  background-color: black;
+  color: white;
+  border-radius: 25px;
+  font-size: 1.5rem;
+  margin-right: 6px;
+  
+}
+.shiftl{
+  margin-top: 3px;
+}

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Store</title>
+    <link rel="stylesheet" href="./css/home.css" />
+    <script
+      src="https://kit.fontawesome.com/1123c5e626.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- heading  -->
+    <header>
+      <h1 class="comp_name">
+        <span class="finc">D</span>aily &nbsp <span class="finc">S</span>tore
+      </h1>
+    </header>
+    <!-- navigation bar  -->
+    <nav class="navbar">
+      <div class="home">
+        <a href="home.html">Home</a>
+      </div>
+      <div class="deals">
+        <a href="deals.html">Deals</a>
+      </div>
+      <div class="about">
+        <a href="about.html">About Us</a>
+      </div>
+      <div class="ping">
+        <a href="#">Ping Us</a>
+      </div>
+      <div class="search-container">
+        <input type="text" placeholder="Search..." />
+        <i class="fas fa-search search-icon"></i>
+      </div>
+      <span class="log_sign">
+        <a href="login.html"
+          ><i class="fa-solid fa-arrow-right-to-bracket"></i>Login/Sign-up</a
+        >
+      </span>
+    </nav>
+
+    <!-- category cards section  -->
+
+    <div class="categorycards">
+      <div class="ccards vege">
+        <a href="#vegetablels-section">
+          <img src="./image/vege.jpg" alt="Vegetables" /><br />
+          Vegetables</a
+        >
+      </div>
+      <div class="ccards frui">
+        <a href="#fruits-section">
+          <img src="./image/fruits.jpg" alt="Fruits" /><br />
+          Fruits</a
+        >
+      </div>
+      <div class="ccards meats">
+        <a href="#meat-section">
+          <img src="./image/meat.jpg" alt="Meat" /> <br />
+          Meat</a
+        >
+      </div>
+      <div class="ccards dailyneeds">
+        <a href="#">
+          <img src="./image/dailyneeds.jpg" alt="Daily needs" /> <br />
+          Daily Needs</a
+        >
+      </div>
+    </div>
+    <br /><br /><br />
+    <!-- Vegetables Section  -->
+    <div class="vegetablels-section" id="vegetablels-section">
+      <h2 class="vheading">Vegetables</h2>
+      <br /><br /><br />
+      <div class="section_card">
+        <img class="section_img img_resize" src="./image/potato.jpeg" alt="Potatos" />
+        <h3>Potatos</h3>
+        <p>price: <strike>50rs</strike> 25rs/KG</p>
+        <p>
+          qty:
+          <select name="qty1" id="qty1">
+            <option value="250gm">250gm</option>
+            <option value="500gm">500gm</option>
+            <option value="2KG">2KG</option>
+            <option value="5KG">5KG</option>
+          </select>
+        </p>
+
+        <button class="buy-now">Buy Now</button>
+      </div>
+      <div class="section_card">
+        <img class="section_img img_resize"  src="./image/tomato.jpeg" alt="Tomatos" />
+        <h3>Tomatos</h3>
+        <p>price: <strike>80rs</strike> 50rs/KG</p>
+        <p>
+          qty:
+          <select name="qty2" id="qty2">
+            <option value="250gm">250gm</option>
+            <option value="500gm">500gm</option>
+            <option value="2KG">2KG</option>
+            <option value="5KG">5KG</option>
+          </select>
+        </p>
+
+        <button class="buy-now">Buy Now</button>
+      </div>
+      <div class="section_card">
+        <img class="section_img img_resize"  src="./image/onion.jpeg" alt="Onions" />
+        <h3>Onions</h3>
+        <p>price: <strike>50rs</strike> 25rs/KG</p>
+        <p>
+          qty:
+          <select name="qty3" id="qty3">
+            <option value="250gm">250gm</option>
+            <option value="500gm">500gm</option>
+            <option value="2KG">2KG</option>
+            <option value="5KG">5KG</option>
+          </select>
+        </p>
+
+        <button class="buy-now">Buy Now</button>
+      </div>
+      <div class="section_card">
+        <img class="section_img img_resize" src="./image/carrot.jpeg" alt="Carrots" />
+        <h3>Carrots</h3>
+        <p>price: <strike>40rs</strike> 30rs/KG</p>
+        <p>
+          qty:
+          <select name="qty4" id="qty4">
+            <option value="250gm">250gm</option>
+            <option value="500gm">500gm</option>
+            <option value="2KG">2KG</option>
+            <option value="5KG">5KG</option>
+          </select>
+        </p>
+
+        <button class="buy-now">Buy Now</button>
+      </div>
+    </div>
+
+    <!-- Fruits Section  -->
+    <div class="fruits-section" id="fruits-section">
+      <h2 class="fheading">Fruits</h2>
+      <br />
+      <div class="section_card">
+        <img class="section_img img_resize"  src="./image/apple.jpg" alt="Apple" />
+        <h3>Apples</h3>
+        <p>price: <strike>150rs</strike> 120rs/KG</p>
+        <p>
+          qty:
+          <select name="qty5" id="qty5">
+            <option value="250gm">250gm</option>
+            <option value="500gm">500gm</option>
+            <option value="2KG">2KG</option>
+            <option value="5KG">5KG</option>
+          </select>
+        </p>
+
+        <button class="buy-now">Buy Now</button>
+      </div>
+      <div class="section_card">
+        <img class="section_img img_resize"  src="./image/mango.jpg" alt="Mango" />
+        <h3>Mangos</h3>
+        <p>price: <strike>120rs</strike> 100rs/KG</p>
+        <p>
+          qty:
+          <select name="qty6" id="qty6">
+            <option value="250gm">250gm</option>
+            <option value="500gm">500gm</option>
+            <option value="2KG">2KG</option>
+            <option value="5KG">5KG</option>
+          </select>
+        </p>
+
+        <button class="buy-now">Buy Now</button>
+      </div>
+      <div class="section_card">
+        <img class="section_img img_resize"  src="./image/pineapple.jpg" alt="Pineapple" />
+        <h3>Pineapples</h3>
+        <p>price: <strike>80rs</strike> 70rs/KG</p>
+        <p>
+          qty:
+          <select name="qty7" id="qty7">
+            <option value="250gm">250gm</option>
+            <option value="500gm">500gm</option>
+            <option value="2KG">2KG</option>
+            <option value="5KG">5KG</option>
+          </select>
+        </p>
+
+        <button class="buy-now">Buy Now</button>
+      </div>
+    </div>
+
+    <!-- Meats Section  -->
+    <div class="meat-section" id="meat-section">
+      <h2 class="mheading">Meats</h2>
+      <br />
+      <div class="meat-card">
+        <img class="section_img img_resize"  src="./image/meat1.jpg" alt="Full" />
+        <h3>Full</h3>
+        <p>price: <strike>400rs</strike> 350rs/KG</p>
+        <p>
+          qty:
+          <select name="qty8" id="qty8">
+            <option value="250gm">250gm</option>
+            <option value="500gm">500gm</option>
+            <option value="2KG">2KG</option>
+            <option value="5KG">5KG</option>
+          </select>
+        </p>
+
+        <button class="buy-now">Buy Now</button>
+      </div>
+      <div class="meat-card">
+        <img class="section_img img_resize"  src="./image/meat2.jpg" alt="legs" />
+        <h3>Legs</h3>
+        <p>price: <strike>300rs</strike> 300rs/KG</p>
+        <p>
+          qty:
+          <select name="qty9" id="qty9">
+            <option value="250gm">250gm</option>
+            <option value="500gm">500gm</option>
+            <option value="2KG">2KG</option>
+            <option value="5KG">5KG</option>
+          </select>
+        </p>
+
+        <button class="buy-now">Buy Now</button>
+      </div>
+      <div class="meat-card">
+        <img class="section_img img_resize"  src="./image/meat3.jpg" alt="Spicy" />
+        <h3>Spicy</h3>
+        <p>price: <strike>450rs</strike> 400rs/KG</p>
+        <p>
+          qty:
+          <select name="qty10" id="qty10">
+            <option value="250gm">250gm</option>
+            <option value="500gm">500gm</option>
+            <option value="2KG">2KG</option>
+            <option value="5KG">5KG</option>
+          </select>
+        </p>
+
+        <button class="buy-now">Buy Now</button>
+      </div>
+    </div>
+    <!-- footer section  -->
+    <footer>
+      <table    >
+        <thead>
+          <tr>
+            <th>Locations</th>
+            <th>Careers</th>
+            <th>Quick Links</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>India</td>
+                <td>Become a Partner</td>
+                <td>FAQ</td>
+            </tr>
+            <tr>
+                <td>USA</td>
+                <td>Become a Delivery</td>
+                <td>Help</td>
+            </tr>
+            <tr>
+                <td>Canada</td>
+                <td>Become a Seller</td>
+                <td>Privacy Policy</td>
+            </tr>
+        </tbody>
+      </table>
+    </footer>
+    <!-- copyright  -->
+    <div class="copyright">
+        <span>&#9400;</span> <p class="shiftl"> Daily Store</p>
+      </body>
+</html>
