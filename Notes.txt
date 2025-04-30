@@ -5,7 +5,26 @@ Total width = Padding right + Padding left + Bottom Right + Border left
 
 
 Next Session Task: 11-04-25
-https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox   ---> Done
 
 Next Sessiion : 25-04-25
 12 Grid System, Alerts, modal,carousel
+
+
+
+
+JS Runtime Environment: 
+                        1. JS Engine(V8)  --> Call Stack 
+                        2. Web Apis
+                        3. Call Back Queue 
+                        4. Micro Tasks Queue
+                        5.Event Loops
+
+
+JS Engine(V8): 
+Parsing -----> Compile ------> Execute
+        (Process of mark and sweep) Garbage in Java
+
+GEC (Global Execuation Context) is always running in JS file without even a single line of JS
+
+            1. It performs Tree formation :- AST (Abstract Systax Tree)
