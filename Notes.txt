@@ -4,27 +4,54 @@ Total width = Padding right + Padding left + Bottom Right + Border left
 
 
 
-Next Session Task: 11-04-25
-https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox   ---> Done
-
-Next Sessiion : 25-04-25
-12 Grid System, Alerts, modal,carousel
-
-
-
-
 JS Runtime Environment: 
                         1. JS Engine(V8)  --> Call Stack 
                         2. Web Apis
                         3. Call Back Queue 
                         4. Micro Tasks Queue
-                        5.Event Loops
+                        5. Event Loops
 
 
 JS Engine(V8): 
 Parsing -----> Compile ------> Execute
         (Process of mark and sweep) Garbage in Java
 
-GEC (Global Execuation Context) is always running in JS file without even a single line of JS
+GEC (Global Execuation Context) is always running in JS file without even a single line of JS (Anonymus function)
 
             1. It performs Tree formation :- AST (Abstract Systax Tree)
+
+
+
+
+ref: hitesh chaudhary(easy), akshay saini (advance)
+
+
+homwwork: automailer function
+
+higher order function
+javascript DOM
+DOM manipulation
+events in js
+event bubbling capturing and trickling
+event delegation (advanced implementation) 
+drawback of callback and its solution
+async and await and fetch 
+call apply bind
+prototype(advanced implementation)
+local and session storage
+dealing with API and its data handling
+Regex(advanced if time allow)
+virtual DOM
+intro to node js and its environment
+module and npm
+package and its versioning
+custom module and package making
+export named and default
+event loop
+intro to virtual dom and babel
+react working with babel
+react fibre
+react setup with vite
+
+
+higher order function, dom, events capturing, events target, event bubbling, event trickling, event deligation

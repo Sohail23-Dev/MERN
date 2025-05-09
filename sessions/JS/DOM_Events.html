@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1 id="one">This is a H1 tag</h1>
+    <p class="fun">this is my paragraph</p>
+
+    <button id="btn">Submit</button>
+
+    <script>
+        const one = document.getElementById("one");
+        // const two = document.querySelector(".fun");
+        // one.style.fontSize = "50px";
+        // one.style.color = 'red';
+        // two.style.color= "blue";
+
+        // //create
+        // const container = document.createElement("sohail");
+        // document.body.appendChild(container);
+        // container.innerText = "Sohail "
+        // console.log(container)
+        // //remove
+        // const container2 = document.createElement("sohail");
+        // document.body.appendChild(container2);
+        // container2.innerText = "Sohail"
+
+        // document.body.removeChild(container2);
+
+        const btn = document.querySelector("button");
+        btn.addEventListener("mouseover", ()=>{
+            one.style.color = 'red';
+        })
+
+
+    </script>
+</body>
+</html>
