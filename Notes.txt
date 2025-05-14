@@ -26,8 +26,14 @@ GEC (Global Execuation Context) is always running in JS file without even a sing
 ref: hitesh chaudhary(easy), akshay saini (advance)
 
 
+postman dummy api calls,call apply bind, prototype, prototype inheritance, IIFE, async and await
+
+
 homwwork: automailer function
 
+
+
+https://www.geeksforgeeks.org/js-prototype/ -----> prototypes
 higher order function
 javascript DOM
 DOM manipulation
