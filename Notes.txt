@@ -26,10 +26,10 @@ GEC (Global Execuation Context) is always running in JS file without even a sing
 ref: hitesh chaudhary(easy), akshay saini (advance)
 
 
-postman dummy api calls,call apply bind, prototype, prototype inheritance, IIFE, async and await
 
 
-homwwork: automailer function
+
+homwwork: api cards
 
 
 
@@ -58,6 +58,3 @@ intro to virtual dom and babel
 react working with babel
 react fibre
 react setup with vite
-
-
-higher order function, dom, events capturing, events target, event bubbling, event trickling, event deligation

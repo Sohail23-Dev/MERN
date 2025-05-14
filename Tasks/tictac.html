@@ -89,6 +89,7 @@
       </div>
     </div>
 
+
     <script>
       const curr = document.querySelector(".currp");
       const container = document.querySelector(".container");
@@ -147,9 +148,13 @@
       });
 
       function checkWin() {
-        return winarr.some((pattern) =>
-          pattern.every((index) => board[index] === currentPlayer)
+        return winarr.some((pattern) =>{
+          pattern.every((index) => {
+            board[index] === currentPlayer
+          })
+        }
         );
+      
       }
 
       function resetGame() {
