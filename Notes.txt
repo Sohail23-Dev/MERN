@@ -26,7 +26,7 @@ GEC (Global Execuation Context) is always running in JS file without even a sing
 ref: hitesh chaudhary(easy), akshay saini (advance)
 
 
-
+calc in css
 
 
 homwwork: api cards
@@ -46,7 +46,7 @@ call apply bind
 prototype(advanced implementation)
 local and session storage
 dealing with API and its data handling
-Regex(advanced if time allow)
+Regex(advanced if time allow) ------> Important
 virtual DOM
 intro to node js and its environment
 module and npm

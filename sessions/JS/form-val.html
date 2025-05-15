@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form validation</title>
+  </head>
+  <body>
+    <h1>Form Validation</h1>
+    <form id="form">
+      <input
+        type="text"
+        id="username"
+        placeholder="Enter your username"
+      />
+      <br />
+      <br />
+      <input type="email" id="email" placeholder="Enter your email" />
+      <br />
+      <br />
+      <input
+        type="password"
+        id="password"
+        placeholder="Enter your password"
+      />
+      <br />
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+
+    <script>
+      function valid(email) {
+        const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return pattern.test(email);
+      }
+      document
+        .getElementById("form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          const username = document.getElementById("username").value;
+          const email = document.getElementById("email").value;
+          const password = document.getElementById("password").value;
+
+          if (username === "" || email === "" || password === "") {
+            alert("All fields are required!");
+            return;
+          }
+          if (username.length > 12) {
+            alert("Username should be less than 12 char");
+            return;
+          }
+          if(valid(email)){
+            console.log(valid(email)) ? "Valid email address" : "Invalid email address";
+          }
+          if (password.length < 8) {
+            alert("Password should be more than 8 char");
+          }
+
+          alert("Form submitted successfully!");
+        });
+    </script>
+  </body>
+</html>

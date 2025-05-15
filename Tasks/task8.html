@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 8</title>
+  </head>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+    .container {
+      display: flex;
+      justify-content: space-evenly;
+      position: relative;
+      top: 20px;
+    }
+    .shape {
+      height: 100px;
+      width: 100px;
+      padding: 10px;
+      margin: 10px;
+    }
+
+    .work-area{
+        display: flex;
+        position: relative;
+        top: 50px;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+        background: linear-gradient(135deg, green 10%,blue,red);
+    }
+  </style>
+  <body>
+    <div class="container">
+      <input type="number" placeholder="No. of Shape" id="number" />
+      <input type="color" id="color" />
+      <select name="shape" id="shape">
+        <option value="circle">Circle</option>
+        <option value="square">Square</option>
+      </select>
+      <button id="gen">Generate</button>
+    </div>
+
+    <div class="work-area"></div>
+
+    <script>
+      const workarea = document.querySelector(".work-area");
+      const quan = document.getElementById("number").value;
+      const colo = document.getElementById("color").value;
+      const shape = document.getElementById("shape").value;
+      const gen = document.getElementById("gen");
+
+      gen.addEventListener("click", (event) => {
+        const workarea = document.querySelector(".work-area");
+        const quan = document.getElementById("number").value;
+        const colo = document.getElementById("color").value;
+        const shape = document.getElementById("shape").value;
+        const gen = document.getElementById("gen");
+        if(quan === ''){
+            alert("Enter the quantity")
+        }
+        for (let i = 0; i < quan; i++) {
+          const shp = document.createElement("div");
+          shp.classList.add("shape");
+          if (shape === "circle") {
+            shp.style.borderRadius = "50%";
+          }
+
+          // Apply color
+          shp.style.backgroundColor = colo;
+
+          workarea.appendChild(shp);
+        }
+      });
+    </script>
+  </body>
+</html>
