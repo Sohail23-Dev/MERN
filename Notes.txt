@@ -29,7 +29,9 @@ ref: hitesh chaudhary(easy), akshay saini (advance)
 calc in css
 
 
-homwwork: api cards
+session and local storages, node js, nodejs arch. , node versioning, 
+
+homwwork: todo list
 
 
 
