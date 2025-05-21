@@ -29,7 +29,7 @@ ref: hitesh chaudhary(easy), akshay saini (advance)
 calc in css
 
 
-session and local storages, node js, nodejs arch. , node versioning, 
+
 
 homwwork: todo list
 
