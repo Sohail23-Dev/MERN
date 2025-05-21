@@ -1,0 +1,57 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, black,grey, white, grey, black);
+    
+
+}
+.container{
+    height: 280px;
+    width: 210px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 20px;
+    color: black;
+    background-color:rgb(245, 241, 241);
+    box-shadow: 15px 20px 10px rgba(18, 18, 18, 0.3),
+            -10px -15px 10px rgba(201, 125, 125, 0.8);
+
+}
+button{
+    height: 45px;
+    margin: 2px 2px 2px 2px;
+    width: 45px;
+    border-radius: 20px;
+    color: rgb(19, 13, 13);
+    font-weight: bolder;
+    border: none;
+    background-color: rgb(251, 247, 247);
+    box-shadow: 4px 4px 10px rgba(225, 245, 75, 0.3),
+            -2px -2px 5px rgba(17, 17, 17, 0.8);
+
+}
+input{
+    font-style: italic;
+    margin-bottom: 10px;
+    height: 30px;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3),
+            -2px -2px 5px rgba(255, 255, 255, 0.8);
+
+}
+.symbol{
+    color: aqua;
+    font-size: 18px;
+    font-weight: bolder;
+    font-style: italic;
+    background: linear-gradient(135deg, rgb(233, 7, 45),rgb(229, 107, 107),rgb(255, 165, 0),rgb(229, 107, 107),rgb(233, 7, 45));
+}
