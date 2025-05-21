@@ -1,3 +1,4 @@
 {
-    "livePreview.defaultPreviewPath": "/session9/Proj.html"
+    "livePreview.defaultPreviewPath": "/session9/Proj.html",
+    "liveServer.settings.port": 5501
 }

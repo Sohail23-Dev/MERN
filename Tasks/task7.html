@@ -60,15 +60,15 @@
           const data = await response.json();
           // console.log(data);
 
-          if(data && data.products.Array && data.products.isArray){
+          if(data && data.products && Array.isArray(data.products)){
               const container = document.querySelector(".container");
-            data.forEach((emp) => {
+            data.products.forEach((prod) => {
               const cards = document.createElement("div");
               cards.classList.add("cards");
               cards.innerHTML = `
-              <h4 id="comp">${emp.products.slice(0, 20)}</h4>
-              <img id="empimg" src="${emp.photo}"/>
-              <p id="empname">${emp.name.slice(0,20)}</p>
+              <h4 id="comp">${prod.category}</h4>
+              <img id="empimg" src="${prod.images} alt="${prod.thumbnail}"/>
+              <p id="empname">${prod.title.slice(0,20)}</p>
               
               `;
               container.appendChild(cards);

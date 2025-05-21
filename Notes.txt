@@ -21,6 +21,7 @@ GEC (Global Execuation Context) is always running in JS file without even a sing
             1. It performs Tree formation :- AST (Abstract Systax Tree)
 
 
+HMR = Hot Module Replacement
 
 
 ref: hitesh chaudhary(easy), akshay saini (advance)
@@ -28,7 +29,7 @@ ref: hitesh chaudhary(easy), akshay saini (advance)
 
 calc in css
 
-
+filesystem(fs), import export, reactJS -->Vite
 
 
 homwwork: todo list
