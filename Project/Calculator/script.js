@@ -1,5 +1,6 @@
 const container = document.querySelector(".container");
 const inp = document.querySelector("#inp");
+const opp = document.querySelector(".opp");
 let firstN = null;
 let secondN = null;
 let operator = null;
@@ -63,6 +64,7 @@ container.addEventListener("click", (e) => {
     
     // Handle equals
     if (symbol === "=") {
+      opp.textContent= symbol
       if (firstN !== null && operator !== null) {
         secondN = Number(inp.value);
         const result = calculate(operator, firstN, secondN);
@@ -71,6 +73,7 @@ container.addEventListener("click", (e) => {
         secondN = null;
         operator = null;
         reset = true;
+        
       }
       return;
     }
@@ -87,6 +90,7 @@ container.addEventListener("click", (e) => {
         secondN = null;
       }
       operator = symbol;
+      opp.textContent= operator;
       reset = true;
     }
   }

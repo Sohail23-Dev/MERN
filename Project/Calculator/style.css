@@ -55,3 +55,8 @@ input{
     font-style: italic;
     background: linear-gradient(135deg, rgb(233, 7, 45),rgb(229, 107, 107),rgb(255, 165, 0),rgb(229, 107, 107),rgb(233, 7, 45));
 }
+.opp{
+    margin-top: 8px;
+    margin-left: 12px;
+    position: absolute;
+}

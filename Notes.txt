@@ -29,7 +29,9 @@ ref: hitesh chaudhary(easy), akshay saini (advance)
 
 calc in css
 
-filesystem(fs), import export, reactJS -->Vite
+hooks -> useState,tailwind,counter,conditional rendering,props,fiber
+
+props drilling
 
 
 homwwork: todo list
