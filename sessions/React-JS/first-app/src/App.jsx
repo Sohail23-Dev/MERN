@@ -1,33 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import {React} from 'react'
+import Nav from './components/Nav'
+// import Coun from "./components/coun.jsx"
+import Card from './components/card'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
+  // let login = false;
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    {/* {login?<Nav />:<Coun/>} */}
+    {/* <Coun/> */}
+    <Nav />
+    <Card imgsrc={"../src/assets/apple.jpg"} age={10} name={"Appleeshwar"}/>
+    <Card imgsrc={"../src/assets/tomato.jpeg"} age={11} name={"Tamatareshwar"}/>
+    <Card imgsrc={"../src/assets/potato.jpeg"} age={12} name={"Alooeshwar"}/>
+    <Card imgsrc={"../src/assets/mango.jpg"} age={13} name={"Raja Ji"}/>
     </>
   )
 }
