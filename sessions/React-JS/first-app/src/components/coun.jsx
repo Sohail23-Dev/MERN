@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { React, useState, useEffect } from "react";
 
 const Coun = () => {
   let [ Values, SetValues ] = useState(0);
@@ -13,6 +13,21 @@ const Coun = () => {
   function reset() {
     SetValues(0);
   }
+
+
+
+  useEffect(()=>{
+    if(Values === 5){
+      console.log("Muje Bulaya gya hai")
+    }
+
+    return ()=>{
+      if(Values === 5){
+        console.log("Mera kaam hogya")
+      }
+    }
+
+  },[Values])
   return (
     <div>
       <h1>Value: {Values}</h1>

@@ -1,13 +1,23 @@
 import React from "react";
-
-const Card = ({imgsrc, name, age})=>{
-    return (
-        <>
-        <img src={imgsrc} alt="Images" height={"200px"}  width={'200px'}/>
-        <h1 className="text-5xl">Name: {name}</h1>
-        <h4>Age: {age}</h4>
-        </>
-    );
-}
-
+const Card = ({ productObj }) => {
+ let { title, category, price, image, rating } = productObj;
+ return (
+  <div className="card bg-red-100 w-75 shadow-sm">
+   <figure>
+    <img className="h-40" src={image} alt="Shoes" />
+   </figure>
+   <div className="card-body">
+    <h2 className="card-title text-black">{title}</h2>
+    <p>
+     <span className="badge badge-primary">{category}</span>
+    </p>
+    <p className="text-black">Rating: {rating}</p>
+    <p className="text-xl font-bold text-black">${price}</p>
+    <div className="card-actions justify-end">
+     <button className="btn btn-primary">Add to Cart</button>
+    </div>
+   </div>
+  </div>
+ );
+};
 export default Card;

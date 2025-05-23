@@ -29,12 +29,8 @@ ref: hitesh chaudhary(easy), akshay saini (advance)
 
 calc in css
 
-hooks -> useState,tailwind,counter,conditional rendering,props,fiber
 
-props drilling
-
-
-homwwork: todo list
+homwwork: Stop watch --> Start- stop- reset
 
 
 
