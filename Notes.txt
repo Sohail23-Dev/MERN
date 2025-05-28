@@ -29,9 +29,15 @@ ref: hitesh chaudhary(easy), akshay saini (advance)
 
 calc in css
 
+useMemo, React.Memo or Memo, useCallback, Prop Drilling problem Discussed
 
-homwwork: Stop watch --> Start- stop- reset
+homwwork: 
 
+
+//Optimization Hooks in React
+value hold = useMemo
+component hold = React.Memo, Memo
+function hold = useCallback
 
 
 https://www.geeksforgeeks.org/js-prototype/ -----> prototypes
