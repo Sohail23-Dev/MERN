@@ -1,22 +1,23 @@
-import { React } from "react";
-import Nav from "./components/Nav";
-import Coun from "./components/coun.jsx";
-import NewHome from "./components/NewHome.jsx";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Nav from "./components/NavBar/Nav.jsx";
+import NewHome from "./components/Home/NewHome.jsx";
+import Contact from "./components/Contact/Contact.jsx";
+import About from "./components/About/About.jsx";
+import Review from "./components/Review/Review.jsx";
+import FAQ from "./components/FAQ/FAQ.jsx";
 
 const App = () => {
-  // let login = false;
   return (
-    <>
-      {/* {login?<Nav />:<Coun/>} */}
-
-      {/* <Card imgsrc={"../src/assets/apple.jpg"} age={10} name={"Appleeshwar"}/>
-    <Card imgsrc={"../src/assets/tomato.jpeg"} age={11} name={"Tamatareshwar"}/>
-    <Card imgsrc={"../src/assets/potato.jpeg"} age={12} name={"Alooeshwar"}/>
-    <Card imgsrc={"../src/assets/mango.jpg"} age={13} name={"Raja Ji"}/> */}
+    <Router>
       <Nav />
-      {/* <Coun/> */}
-      <NewHome />
-    </>
+      <Routes>
+        <Route path="/" element={<NewHome />} />
+        <Route path="/Contact" element={<Contact />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/Review" element={<Review />} />
+        <Route path="/FAQ" element={<FAQ />} />
+      </Routes>
+    </Router>
   );
 };
 

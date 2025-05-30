@@ -21,6 +21,15 @@
 }
 .container {
   height: 10vh;
+  width: 100vw;
+  background-color: blueviolet;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.nav-container {
+  height: 10vh;
   width: 100%;
   background-color: blueviolet;
   display: flex;
@@ -28,30 +37,40 @@
   justify-content: space-between;
   padding: 10px;
 }
-.heading{
+.heading {
   color: beige;
   position: relative;
   left: 1vw;
-
 }
-.heading:hover{
-    color: yellowgreen;
-  }
-.nav-items{
+.heading:hover {
+  color: yellowgreen;
+}
+.nav-items {
   position: relative;
-  right: 1vw;
+  left: -65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
-.nav-items .links{
-  margin-left: 2vw;
+.nav-items .links {
+  padding-left: 2rem;
   font-size: 1.1rem;
   text-decoration: none;
   color: beige;
 }
 
-.nav-items .links:hover{
+.nav-items .links:hover {
   color: red;
 }
 button {
   padding: 20px;
-  margin-left: 10px;
+  position: relative;
+  top: -27px;
+}
+.user{
+  padding-left: 10px;
+}
+.cart{
+  padding-left: 10px;
 }

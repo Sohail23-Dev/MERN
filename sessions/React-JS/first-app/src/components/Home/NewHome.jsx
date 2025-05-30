@@ -1,6 +1,6 @@
 import React from "react";
-import products from "./Products";
-import NewCard from "./NewCard";
+import products from "../Products";
+import NewCard from "../Cards/NewCard";
 
 const NewHome = () => {
   return (
