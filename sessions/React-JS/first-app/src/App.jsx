@@ -7,6 +7,7 @@ import Review from "./components/Review/Review.jsx";
 import FAQ from "./components/FAQ/FAQ.jsx";
 
 const App = () => {
+  
   return (
     <Router>
       <Nav />

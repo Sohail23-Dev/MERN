@@ -7,7 +7,9 @@ const Nav = () => {
   return (
     <>
       <div className="nav-container sticky top-0 z-1 rounded-2xl">
+        <Link to="/" className="links">
         <h1 className="heading text-4xl">Ecomm</h1>
+        </Link>
         <div className="nav-items">
           <Link to="/" className="links ">
             Home
