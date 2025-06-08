@@ -14,7 +14,7 @@ const NewCard = ({ ObjProd }) => {
       </figure>
       <div className="card-body flex flex-col flex-1 justify-between p-4">
         <div>
-          <h2 className="card-title text-blue-900 font-bold text-lg mb-2 truncate">{title.slice(0,50)}</h2>
+          <h2 className="card-title text-blue-900 font-bold text-lg mb-2 truncate">{title}</h2>
           <p>
             <span className="badge bg-gradient-to-r from-blue-400 to-purple-400 text-white px-3 py-1 rounded-full shadow-md text-xs font-semibold mb-2 inline-block">{category}</span>
           </p>
