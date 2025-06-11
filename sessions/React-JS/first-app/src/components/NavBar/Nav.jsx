@@ -1,9 +1,10 @@
 import { React } from "react";
 import { Link } from "react-router-dom";
+import "./Nav.css"
 
 const Nav = () => {
   return (
-    <nav className="nav-container flex items-center justify-between bg-white shadow-sm px-8 py-2 sticky top-0 z-10">
+    <nav className="main-bar nav-container flex items-center justify-between bg-white shadow-sm px-8 py-2 sticky top-0 z-10">
       {/* Logo and Brand */}
       <div className="flex items-center gap-2">
         <svg
@@ -34,40 +35,40 @@ const Nav = () => {
         </Link>
       </div>
       {/* Nav Links */}
-      <div className="flex items-center gap-8">
+      <div className="Nav-con flex items-center gap-8">
         <Link
           to="/"
-          className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+          className="Nav-links text-gray-700 hover:text-blue-600 font-medium transition-colors"
         >
           Home
         </Link>
         <Link
           to="/contact"
-          className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+          className="Nav-links text-gray-700 hover:text-blue-600 font-medium transition-colors"
         >
           Contact us
         </Link>
         <Link
           to="/review"
-          className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+          className="Nav-links text-gray-700 hover:text-blue-600 font-medium transition-colors"
         >
           Reviews
         </Link>
         <Link
           to="/FAQ"
-          className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+          className="Nav-links text-gray-700 hover:text-blue-600 font-medium transition-colors"
         >
           FAQ
         </Link>
         <Link
           to="/Cart"
-          className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+          className="Nav-links text-gray-700 hover:text-blue-600 font-medium transition-colors"
         >
           Cart
         </Link>
         <Link
           to="/Login"
-          className="ml-4 px-5 py-1 border-2 border-blue-500 text-blue-600 rounded-xl font-semibold hover:bg-blue-50 transition-colors"
+          className="login-icon ml-4 px-5 py-1 border-2 border-blue-500 text-blue-600 rounded-xl font-semibold hover:bg-blue-50 transition-colors"
         >
           Login
         </Link>

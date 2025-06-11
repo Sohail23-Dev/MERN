@@ -1,0 +1,33 @@
+@media screen and (max-width: 768px) {
+  .Nav-links{
+    display: none;
+  }
+}
+/* @media screen and (max-width: 480px) {
+  .Nav-links {
+    display: flex !important;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50vw;
+    height: 50vh;
+    background: linear-gradient(135deg, #3b82f6 60%, #a21caf 100%);
+    box-shadow: 2px 0 16px rgba(0,0,0,0.15);
+    z-index: 1000;
+    padding-top: 60px;
+    gap: 2rem;
+    align-items: flex-start;
+    transition: left 0.3s;
+    color: aliceblue;
+  }
+  .login-icon{
+    position: absolute;
+    right: 10vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  .Nav-links {
+    display: flex !important;
+  }
+} */
