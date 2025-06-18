@@ -1,8 +1,13 @@
 import React from 'react'
 
 const Cart = () => {
+  const cart = localStorage.getItem("Cart");
   return (
-    <div>Cart</div>
+    <>
+      <div>
+        Cart {cart}
+      </div>
+    </>
   )
 }
 

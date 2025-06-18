@@ -1,9 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import notav from "../../assets/notav.webp";
+import { useDispatch } from "react-redux";
+import { addtoCart } from "../../featues/cartSlice";
 const NewCard = ({ ObjProd }) => {
   let { image, title, category, rating, price } = ObjProd;
   const [quantity, setQuantity] = useState(0);
   const [isCartActive, setIsCartActive] = useState(false);
+  const dispatch = useDispatch();
+
+  const addItemToCart = (item) => {
+    dispatch(addtoCart(item));
+  };
 
   // Handler for image error
   const handleImgError = (e) => {
@@ -11,9 +18,48 @@ const NewCard = ({ ObjProd }) => {
     e.target.src = notav;
   };
 
+  // Load quantity from localStorage on mount
+  useEffect(() => {
+    const storedCart = localStorage.getItem("Cart");
+    if (storedCart) {
+      try {
+        const parsed = JSON.parse(storedCart);
+        if (parsed && parsed[ObjProd.id]) {
+          setQuantity(parsed[ObjProd.id]);
+          setIsCartActive(parsed[ObjProd.id] > 0);
+        }
+      } catch (err) {
+        // ignore parse errors
+        console.log(err)
+      }
+    }
+  }, [ObjProd.id]);
+
+  // Save quantity to localStorage whenever it changes
+  useEffect(() => {
+    const storedCart = localStorage.getItem("Cart");
+    let cartObj = {};
+    if (storedCart) {
+      try {
+        cartObj = JSON.parse(storedCart);
+      } catch (e) {
+        console.log(e)
+        cartObj = {};
+      }
+    }
+    cartObj[ObjProd.id] = quantity;
+    localStorage.setItem("Cart", JSON.stringify(cartObj));
+  }, [quantity, ObjProd.id]);
+
   const handleAddToCart = () => {
     setIsCartActive(true);
-    setQuantity((prev) => prev + 1);
+    const newQty = quantity + 1;
+    setQuantity(newQty);
+    addItemToCart({
+      ...ObjProd,
+      quantity: newQty
+    });
+    // Removed old localStorage.setItem here, now handled by useEffect
   };
 
   const handleIncrease = () => {
@@ -21,7 +67,12 @@ const NewCard = ({ ObjProd }) => {
       if (prev >= 10) {
         return 10;
       } else {
-        return prev + 1;
+        const newQty = prev + 1;
+        addItemToCart({
+          ...ObjProd,
+          quantity: newQty
+        });
+        return newQty;
       }
     });
   };
@@ -30,9 +81,18 @@ const NewCard = ({ ObjProd }) => {
     setQuantity((prev) => {
       if (prev <= 1) {
         setIsCartActive(false);
+        addItemToCart({
+          ...ObjProd,
+          quantity: 0
+        });
         return 0;
       } else {
-        return prev - 1;
+        const newQty = prev - 1;
+        addItemToCart({
+          ...ObjProd,
+          quantity: newQty
+        });
+        return newQty;
       }
     });
   };
